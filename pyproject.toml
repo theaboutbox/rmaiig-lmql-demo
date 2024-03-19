@@ -23,11 +23,11 @@ transformers = "^4.38.2"
 sentencepiece = "^0.2.0"
 llama-cpp-python = "^0.2.57"
 matplotlib = "^3.8.3"
+ipykernel = "^6.29.3"
+ipywidgets = "^8.1.2"
 
 
 [tool.poetry.group.dev.dependencies]
-ipykernel = "^6.29.3"
-ipywidgets = "^8.1.2"
 
 [build-system]
 requires = ["poetry-core"]

@@ -1,0 +1,4 @@
+# API Key for OpenAI
+OPENAI_API_KEY=
+# CMAKE args for llama-cpp-python (see https://llama-cpp-python.readthedocs.io/en/latest/#supported-backends)
+CMAKE_ARGS="-DLLAMA_METAL=on"
