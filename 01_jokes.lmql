@@ -1,0 +1,15 @@
+argmax
+    """A list of good AI jokes. A indicates the punchline
+    Q: How do you make an AI laugh?
+    A: Tell it a bit joke.
+    Q: Why was the AI bad at soccer?
+    A: Because it kept trying to reboot the ball.
+    Q:[JOKE]
+    A:[PUNCHLINE]"""
+from
+    "openai/gpt-3.5-turbo-instruct"
+where
+    len(JOKE) < 120 and 
+    STOPS_AT(JOKE, "?") and 
+    STOPS_AT(PUNCHLINE, "\n") and 
+    len(PUNCHLINE) > 1
