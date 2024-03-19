@@ -1,0 +1,9 @@
+sample(n=1, temperature=1.0)
+"""Tell me a knock knock joke about the Rocky Mountain AI Interest Group:
+
+Knock Knock!
+Who's there?
+"""
+"[WHO]\n" where STOPS_BEFORE(WHO,"\n") and STOPS_BEFORE(WHO,".")
+"{WHO} who?\n"
+"{WHO}[REST]!\n" where STOPS_BEFORE(REST,"\n")

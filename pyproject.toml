@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "lmql-demo"
+version = "0.1.0"
+description = ""
+authors = ["Cameron Pope <cameron@theaboutbox.com>"]
+readme = "README.md"
+packages = [{include = "lmql_demo"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+#lmql = "^0.7.3"
+# LMQL from Github
+lmql = {git = "https://github.com/eth-sri/lmql.git", branch = "main", extras = ["hf"]}
+beautifulsoup4 = "^4.12.3"
+markdownify = "^0.11.6"
+requests = "^2.31.0"
+msgspec = "^0.18.6"
+rich = "^13.7.1"
+html2text = "^2024.2.26"
+dataclasses-json = "^0.6.4"
+torch = "^2.2.1"
+transformers = "^4.38.2"
+sentencepiece = "^0.2.0"
+llama-cpp-python = "^0.2.57"
+matplotlib = "^3.8.3"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.3"
+ipywidgets = "^8.1.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
